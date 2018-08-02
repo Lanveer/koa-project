@@ -4,7 +4,8 @@
 [![Build](https://travis-ci.org/17koa/koa2-demo.svg?branch=master)](https://travis-ci.org/17koa/koa2-demo)
 
 
-
+作者：樊亮
+时间：2018/08/02
 这个项目是express风格的最新的Koa 2项目的示例，已集成到[koa-generator](https://github.com/17koa/koa-generator)里，算是集成一些所谓的最佳实践吧
 
 ## Tech Stack
@@ -156,6 +157,6 @@ app.use(views(__dirname + '/views-ejs', {
 
 ## 推荐
 
-如果你喜欢express风格的生成，推荐[koa-generator](https://github.com/17koa/koa-generator)
+如果你喜欢express风格的生成，推荐[koa-generator](https://github.com/Lanveer/koa-project)
 
-如果你喜欢babel + koa2可以参考[Minimal koa v2 boilerplate.](https://github.com/geekplux/koa2-boilerplate)
+如果你喜欢作者可以参考[Minimal koa v2 boilerplate.](https://github.com/Lanveer/)
