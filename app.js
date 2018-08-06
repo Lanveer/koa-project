@@ -23,10 +23,6 @@ app.use(views(__dirname + '/views', {
   extension: 'jade'
 }));
 
-// app.use(views(__dirname + '/views-ejs', {
-//   extension: 'ejs'
-// }));
-
 
 // logger
 app.use(async (ctx, next) => {
