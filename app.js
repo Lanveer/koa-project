@@ -50,5 +50,3 @@ app.on('error', function(err, ctx){
 
 
 module.exports = app;
-
-// edited by lanveer
