@@ -23,6 +23,8 @@
     "runkoa": "^1.5.2"
   },
   "devDependencies": {
+    "fs": "0.0.1-security",
+    "log4js": "^3.0.4",
     "mocha": "^2.4.5",
     "nodemon": "^1.9.1",
     "should": "^8.3.0",
