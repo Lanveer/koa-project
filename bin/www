@@ -36,7 +36,7 @@ var initLogPath = function(){
     }
 };
 
-// initLogPath();
+initLogPath();
 
 
 
