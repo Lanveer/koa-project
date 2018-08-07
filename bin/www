@@ -5,8 +5,11 @@
  */
 
 //logger
-var fs = require('fs');
-var logConfig = require('../config/log_config');
+import fs from 'fs';
+import  logConfig from '../config/log_config';
+import config from '../config'
+
+
 
 
 /**
@@ -48,8 +51,8 @@ var http = require('http');
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '9999');
-// app.set('port', port);
+var port = normalizePort(config || '9999');
+console.log('port is:', config );
 
 /**
  * Create HTTP server.
