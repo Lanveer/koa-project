@@ -51,8 +51,7 @@ var http = require('http');
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(config || '9999');
-console.log('port is:', config );
+var port = normalizePort(process.env.PORT || '9999');
 
 /**
  * Create HTTP server.

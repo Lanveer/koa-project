@@ -1,6 +1,8 @@
 var router = require('koa-router')();
-var loginRouter = require('./login');
+var loginController = require('../../controller/loginController');
 
-router.use('/login', loginRouter.routes(), loginRouter.allowedMethods());
+router.get('/getUser', loginController.getUser);
+router.get('/registerUser', loginController.registerUser);
+
 
 module.exports = router;

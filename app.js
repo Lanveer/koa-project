@@ -19,7 +19,7 @@ app.use(convert(bodyparser));
 app.use(convert(json()));
 app.use(convert(logger()));
 app.use(convert(require('koa-static')(__dirname + '/public')));
-app.use(responseFormatter('^/api'));
+
 
 //模板引擎
 app.use(views(__dirname + '/views', {
@@ -55,7 +55,7 @@ app.use(async (ctx, next) => {
 });
 
 
-
+app.use(responseFormatter('^/api'));
 router.use('/', index.routes(), index.allowedMethods());
 router.use('/users', users.routes(), users.allowedMethods());
 router.use('/api', api.routes(), api.allowedMethods());

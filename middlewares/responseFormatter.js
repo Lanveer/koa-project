@@ -3,6 +3,8 @@ const ApiError = require('../error/ApiError');
 // const ApiErrorNames = require('../error/ApiErrorNames');
 var response_formatter = (ctx) => {
     //如果有返回数据，将返回数据添加到data中
+    console.log(ctx)
+
     if (ctx.body) {
         ctx.body = {
             code: 0,
@@ -12,7 +14,7 @@ var response_formatter = (ctx) => {
     } else {
         ctx.body = {
             code: 0,
-            message: 'success'
+            message: 'empty'
         }
     }
 };
