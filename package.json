@@ -26,6 +26,7 @@
     "fs": "0.0.1-security",
     "log4js": "^3.0.4",
     "mocha": "^2.4.5",
+    "mysql": "^2.16.0",
     "nodemon": "^1.9.1",
     "should": "^8.3.0",
     "supertest": "^1.2.0"
