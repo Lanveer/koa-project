@@ -3,7 +3,8 @@ const ApiError = require('../error/ApiError');
 const ApiErrorNames = require('../error/ApiErrorNames');
 const redis = require('redis');
 import database from '../utils/database';
-const client = redis.createClient(6379,'127.0.0.1');
+
+const client = redis.createClient(6379,'127.0.0.1',{password:'fanliang'});
 client.set('hello', {a:1, b:2}); // 注意，value会被转为字符串,所以存的时候要先把value 转为json字符串
 
 
@@ -42,11 +43,9 @@ exports.getUser = async (ctx, next) => {
         throw new ApiError(ApiErrorNames.USER_NOT_EXIST);
     }else{
         client.get('name', function(err, value){
+            console.log('name is:', value)
 
         });
-
-        console.log(value)
-
         ctx.body = {
             username:'lan',
             age: 30,
